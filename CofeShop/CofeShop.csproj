@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0149033F-619E-4AD9-ACCC-2402B3786E1B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CofeShop</RootNamespace>
+    <AssemblyName>CofeShop</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BhaiBhaiCoffeeShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BhaiBhaiCoffeeShop.Designer.cs">
+      <DependentUpon>BhaiBhaiCoffeeShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CafeBilling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CafeBilling.designer.cs">
+      <DependentUpon>CafeBilling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CofeInfo_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CofeInfo_Form.Designer.cs">
+      <DependentUpon>CofeInfo_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoffeeDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoffeeDetails.designer.cs">
+      <DependentUpon>CoffeeDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccess.cs" />
+    <Compile Include="PrintReciptOFSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintReciptOFSalary.Designer.cs">
+      <DependentUpon>PrintReciptOFSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerForm.Designer.cs">
+      <DependentUpon>OwnerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUser_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser_Form.Designer.cs">
+      <DependentUpon>AddUser_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintUpdateInfo_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintUpdateInfo_Form.Designer.cs">
+      <DependentUpon>PrintUpdateInfo_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintUserInfo_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintUserInfo_Form.Designer.cs">
+      <DependentUpon>PrintUserInfo_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalaryInfo_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalaryInfo_Form.Designer.cs">
+      <DependentUpon>SalaryInfo_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePasswordForm.Designer.cs">
+      <DependentUpon>UpdatePasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateUserInfo_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateUserInfo_Form.Designer.cs">
+      <DependentUpon>UpdateUserInfo_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomePage.Designer.cs">
+      <DependentUpon>WelcomePage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BhaiBhaiCoffeeShop.resx">
+      <DependentUpon>BhaiBhaiCoffeeShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CafeBilling.resx">
+      <DependentUpon>CafeBilling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CofeInfo_Form.resx">
+      <DependentUpon>CofeInfo_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoffeeDetails.resx">
+      <DependentUpon>CoffeeDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerForm.resx">
+      <DependentUpon>OwnerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUser_Form.resx">
+      <DependentUpon>AddUser_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintReciptOFSalary.resx">
+      <DependentUpon>PrintReciptOFSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintUpdateInfo_Form.resx">
+      <DependentUpon>PrintUpdateInfo_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintUserInfo_Form.resx">
+      <DependentUpon>PrintUserInfo_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Resources.resx" />
+    <EmbeddedResource Include="SalaryInfo_Form.resx">
+      <DependentUpon>SalaryInfo_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePasswordForm.resx">
+      <DependentUpon>UpdatePasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateUserInfo_Form.resx">
+      <DependentUpon>UpdateUserInfo_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomePage.resx">
+      <DependentUpon>WelcomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
